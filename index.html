@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Привет, мир!</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      padding: 1.25rem;
+      background: #f3f1ec;
+      color: #202a25;
+      font-family: system-ui, sans-serif;
+    }
+
+    main {
+      width: min(100%, 42rem);
+      padding: clamp(2.5rem, 10vw, 6rem) 1.25rem;
+      border: 1px solid #deded4;
+      border-radius: 1.5rem;
+      background: #fffefa;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 8vw, 4.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.05em;
+      overflow-wrap: anywhere;
+    }
+
+    h1::after {
+      display: block;
+      width: 2rem;
+      height: 0.25rem;
+      margin: 1.25rem auto 0;
+      border-radius: 1rem;
+      background: #40785e;
+      content: "";
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Привет, мир!</h1>
+  </main>
+</body>
+</html>
